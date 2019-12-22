@@ -1,0 +1,155 @@
+/*****************************************************************************
+****  CONTAINTER  ************************************************************
+******************************************************************************/
+#treeContainer{
+	text-align:center;
+    width:250em;
+	margin:20px 10px;
+	font-size:.8em;
+	font-family:"Verdana";
+	display:block;
+	clear:both;
+	
+}
+
+#treeContainer ul{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+/*****************************************************************************
+****  PERSON & CHILDREN DIV  *************************************************
+******************************************************************************/
+div.PersonOn, div.PersonOff{
+	float:left;
+	margin:0px 0px;
+	padding:3px 1px 3px 1px;
+}
+
+div.children{
+	padding:0px;
+	margin:0px 1px;
+}
+
+div.PersonOff div.children{
+	display:none
+}
+div.PersonOn input.button {
+	background-image: url(minus.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+div.PersonOff input.button {
+	background-image: url(plus.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+/*****************************************************************************
+****  INFO BOX  **************************************************************
+******************************************************************************/
+.button{
+	border:1px solid #888;
+	width:7px;
+	height:7px;
+	cursor:hand;
+	margin:0px 0px -2px 0px;
+	padding:0px 0px 0px 0px;
+	background-color:#ccc;
+	font-size:.1em;
+}
+.data{
+	text-align:center; 
+	border:1px solid gray; 
+	border-width:1px 1px 0px 1px; 
+	padding:0px; 
+	margin:0px 0px 0px 0px;
+}
+.inlaw{
+	color:#888!important;
+}
+
+.infoBoxOn label{
+	width:8.5em;
+	font-weight:bold;
+	white-space:nowrap;
+	text-align:left;
+	padding-right:5px;
+}
+.infoBoxOn
+{
+    font-family:"Georgia";
+	display:inline; 
+	position:absolute; 
+	width: 20em;
+	height:10em;
+	border:1px dotted gray;
+	text-align:left;  
+	z-index:2;
+	background:white;
+	text-transform:Capitalize;
+	padding:10px;
+	margin:0px;
+	overflow:hidden;
+	font-size:12px;
+}
+.infoBoxOn img{
+	margin:0px;
+	padding:0px;
+	position:absolute;
+}
+.infoBoxOff{
+	display:none
+}
+.portrait{
+	margin:0px;
+	padding:0px;
+	width:13em;
+	height:100%;
+	float:left;
+	overflow:hidden;
+}
+/*****************************************************************************
+****  NAME LABEL  ************************************************************
+******************************************************************************/
+.fname{
+	cursor:help;
+	padding:1px;
+	}
+	
+.fname a:link,
+.fname a:visited,
+.fname a:hover{
+	text-transform:Capitalize;
+	text-decoration:none;
+	background-color:white;
+	padding: 0px 0px 0px 0px;
+	margin:0px;
+	color:black;
+}
+.fname a:hover{
+	background-color:gold;
+	cursor:help;
+}
+
+.fname a.inlaw:hover{
+	background-color:#ff5 !important;
+}
+.dragged{
+	filter:alpha(opacity='50');
+	moz-opacity:0.5;
+	background-color:orange;
+	padding :2px 4px 2px 4px;
+	border:1px solid black;
+	font-weight:bold;
+	color: black;
+	text-decoration:none;
+}
+a.target{
+	background-color:black;
+	color:gold;
+}
+.clear{
+	clear:both;
+}
+	
